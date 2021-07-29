@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <title>Biscoito da Sorte</title>
+  </head>
+  <body>
+    <header>
+      <img src="/img/biscoito.png" alt="imagem de um biscoito" class="logo" />
+      <h1 class="texto-1">Biscoito da Sorte</h1>
+    </header>
+    <main>
+      <div class="caixa">
+        <h2 class="texto-2" id="text_luck"><%= sorte %></h2>
+      </div>
+      <div class="btnCaixa">
+        <button class="btn" id="wow" href="/">Tenta a sorte aí!</button>
+        <script>
+          var btn = document.getElementById("wow");
+          btn.addEventListener("click", function () {
+            window.location.href = "/";
+          });
+        </script>
+      </div>
+    </main>
+    <script src="/views/events.js"></script>
+  </body>
+</html>
