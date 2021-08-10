@@ -1,4 +1,4 @@
 /node_modules
-./vscode
+/.vscode
 heroku.session.session.sql
 package-lock.json
