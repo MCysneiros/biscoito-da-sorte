@@ -9,7 +9,7 @@ geradorSortes(sortes);
 //app.use(express.static('public'))
 
 app.get("/", (req, res) => {
-  let randomNumber = Math.floor(Math.random() * 362);
+  let randomNumber = Math.floor(Math.random() * sortes.length);
   
   res.render('index',{sorte:sortes[randomNumber]})
   // res.send(sortes[randomNumber]);
